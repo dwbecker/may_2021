@@ -1,3 +1,14 @@
 main {
     font: 300;
 }
+
+body {
+    background: url(../img/Red-Pandas.jpeg) top center;
+}
+
+/*.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 1rem;
+  } */
