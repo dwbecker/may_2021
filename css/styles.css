@@ -27,10 +27,13 @@ nav {
     max-height: 200px;
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 }
 
 article {
-
+    flex-direction: column;
+    max-width: 90%;
+    background-color: lemonchiffon;
 }
 
 form {
