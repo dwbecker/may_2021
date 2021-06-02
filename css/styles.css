@@ -34,6 +34,9 @@ form {
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
   }
   
 @media screen and (min-width: 800px) {
