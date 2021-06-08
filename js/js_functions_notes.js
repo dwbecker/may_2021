@@ -10,20 +10,20 @@ console.log(totalBadges); //displays the total number of badges entered by user 
 
 // Functions: Multiple Returns //
 
-// function isFieldEmpty() {
-//     const field = document.querySelector('#info'); 
-//      if (!field.value) {
-//        return true;
-//      } else {
-//        return false;
-//      }
-//    }
+function isFieldEmpty() {
+    const field = document.querySelector('#info'); 
+     if (!field.value) {
+       return true;
+     } else {
+       return false;
+     }
+   }
    
-//    const fieldTest = isFieldEmpty();
+   const fieldTest = isFieldEmpty();
    
-//    if (fieldTest) {
-//      alert('Please provide your information.');
-//    }
+   if (fieldTest) {
+     alert('Please provide your information.');
+   }
 
 // Functions Parameters and Arguments //
 
@@ -77,14 +77,57 @@ console.log(totalBadges); //displays the total number of badges entered by user 
 
     //Variable Scope - protects variables from overwriting each other
     
-    //global scope - declare as const so global variables will not be overwritten
-    const person = 'Lee';
+        //global scope - declare as const so global variables will not be overwritten
+        const person = 'Lee';
 
-    function greeting() {
-        //function scope
-        let person = 'Meg';
-        alert(`Hi ${person}!`);
+        function greeting() {
+            //function scope
+            let person = 'Meg';
+            alert(`Hi ${person}!`);
+        }
+
+        greeting(); //This will call Meg.
+        alert(`Hi ${person}!`); //This will call Lee
+
+    // Function Declarations vs. Function Expressions
+
+        const getRandomNumber = function(upper) {
+            const randomNumber = Math.floor( Math.random() * upper ) + 1;
+            return randomNumber;
+        };
+
+        getRandomNumber(10)
+
+        //You can call a function above the declaration's code, but you cannot call a function that is an expression before the expression's code.
+
+// Using Arrow Syntax
+    
+    //declaration
+    function getRandomNumber() {
+        const randomNumber = Math.floor( Math.random() * 6 ) + 1;
+        return randomNumber;
     }
 
-    greeting(); //This will call Meg.
-    alert(`Hi ${person}!`); //This will call Lee
+    //expression - not hoisted
+    const getRandomNumber = function() {
+        const randomNumber = Math.floor( Math.random() * 6 ) + 1;
+        return randomNumber;
+    };
+
+    //arrow syntax - not hoisted
+    const getRandomNumber = (upper) => {
+        const randomNumber = Math.floor( Math.random() * upper ) + 1;
+        return randomNumber;
+    };
+
+        //Practice: rewrite as a arrow function
+
+        function getArea(width, length, unit) {
+            const area = width * length;
+            return `${area} ${unit}`;
+        }
+
+        const getArea = (width, length, unit) => {
+            const area = width * length;
+            return `${area} ${unit}`;
+        }
