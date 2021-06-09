@@ -1,27 +1,11 @@
 /******************************
 Main Styles
 *******************************/
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin-left: 10vh;
-    margin-right: 10vh; */
-}
-.column {
-    width: 90%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    border-radius: 5%;
-    margin-bottom: 3rem;
-    padding: 0, 1em;
+* {
+   box-sizing: border-box; 
 }
 
 body {
-    /* margin: 10px; */
     padding: 0;
     box-sizing: border-box;
     display: flex;
@@ -42,6 +26,44 @@ nav {
     margin-left: 5px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 10vh;
+    margin-right: 10vh; */
+}
+
+button {
+    padding: 1rem;
+    background-color: #999;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-primary {
+    background-color: #002984;
+    color: white;
+}
+.column {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;   
+    margin-bottom: 3rem;
+    padding: 0, 1em;
+}
+
+
+
 article {
     flex-direction: column;
     flex-wrap: wrap;
@@ -59,7 +81,6 @@ article {
 h1 {
     text-align: center;
 }
-
 
 
 /******************************
@@ -81,6 +102,25 @@ form {
 Media Queries
 *******************************/
  
+@media all and (max-width: 799px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .profile_photo {
+        align-items: center;
+    }
+    .column {
+        width: 75%;
+        height: 100%;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media all and (min-width: 800px) and (max-width: 1200px) {
     main {
         flex-direction: row;
@@ -104,7 +144,7 @@ Media Queries
     }
 }
 
-@media screen and (min-width: 1201px) {
+@media all and (min-width: 1201px) {
     main {
         flex-direction: row;
         justify-content: center;
