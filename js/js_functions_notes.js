@@ -131,3 +131,81 @@ function isFieldEmpty() {
             const area = width * length;
             return `${area} ${unit}`;
         }
+
+    //default function parameters
+
+        function sayGreeting(name = 'student') { //you can provide a default parameter within the function
+            return `Good morning, ${name}!`
+        }
+
+        function sayGreeting(greeting = 'Good morning', name = 'student') { //you can provide a default parameter within the function
+            return `${greeting}, ${name}!`
+        }
+
+        sayGreeting(undefined, 'Guil') //undefined will send the default parameter for the specific argument.
+
+//Descriptive comments for functions - JSDoc
+
+/**
+ * [A short description of the myFunc function]
+ *
+ * @param {[param type]} param1 - [parameter description]
+ * @param {[param type]} param2 - [parameter description]
+ * @returns {[return type]} [documents the function's return value]
+ */
+
+ function myFunc( param1, param2 ) {
+    // function returns a value...
+  }
+
+/**
+ * Calculates and returns the area of a rectangle.
+ *
+ * @param {number} width - The width of the rectangle.
+ * @param {number} length - The length of the rectangle.
+ * @param {string} unit - The unit of measurement.
+ * @returns {string} The area of the rectangle and unit of measure.
+ */
+
+ function getArea(width, length, unit) {
+    const area = width * length;
+    return `${area} ${unit}`;
+  }
+  //Function Challenge
+        
+  //declaration
+        function getRandomNumber() {
+            const randomNumber = Math.floor( Math.random() * 6 ) + 1;
+            return randomNumber;
+        }
+
+        //expression - not hoisted
+        const getRandomNumber = function() {
+            const randomNumber = Math.floor( Math.random() * 6 ) + 1;
+            return randomNumber;
+        };
+
+        //arrow syntax - not hoisted
+        const getRandomNumber = (upper) => {
+            const randomNumber = Math.floor( Math.random() * upper ) + 1;
+            return randomNumber;
+
+/**
+ * Returns a random number between two numbers.
+ *
+ * @param {number} lower - The lowest number value.
+ * @param {number} upper - The highest number value.
+ * @return {number} The random number value.
+ */
+
+    function getRandomNumber(lower, upper) {
+        return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+    }
+
+    function getRandomNumber(lower, upper = 100) {
+        if (isNaN(lower || isNaN(upper) )) {
+            throw Error('Both arguments must be numbers.')
+        }
+        return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+    }
+
