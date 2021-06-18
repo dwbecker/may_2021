@@ -82,5 +82,59 @@
     ];
       
     for ( let i = 0; i < scienceStudents.length; i++ ) {
-        console.log( students[i] ;)
+        console.log( scienceStudents[i] ;)
       }
+
+// Loop through an Array
+
+      const playlist = [
+          'So What',
+          'Respect',
+          'What a Wonderful World',
+          'At Last',
+          'Three Little Birds',
+          'The Way You Look Tonight'
+      ];
+
+      function createListItems(arr) {
+        let items = '';
+        for ( let i = 0; i < arr.length; i++ ) {
+            items += `<li>${ arr[i] }</li>`;
+        }
+        return items;
+      }
+
+      document.querySelector('main').innerHTML = `
+        <ol>
+            ${createListItems}
+        </ol>
+      `;
+
+// Useful Array Methods
+
+      // .join()
+
+        arr.join() // great way to display all the elements of an array on a single line as a string
+        playlist.join(', ') // displays all elements as a string separated by commas
+
+    // .includes() //This is case sensitive
+
+      arr.includes() //great way to see if an array includes a specific value
+      playlist.includes('So What') // true bc the playlist array includes this element
+
+    // .indexOf
+      
+      arr.indexOf() // provides the position index of an element in an array
+      playlist.indexOf('Respect') // 1, bc it is the second item in the playlist array
+
+      // returns -1 if the element is not in the array
+
+// Multidimensional Array
+
+      
+
+
+    
+
+
+
