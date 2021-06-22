@@ -8,3 +8,4 @@ actionButton.addEventListener("click", performActionOnClick)
 function performActionOnClick() {
     alert("You've been rick-rolled!")
 }
+
