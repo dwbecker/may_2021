@@ -16,16 +16,45 @@ body {
 }
 
 header {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     background-color: #087F8C;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     height: 25%;
-    max-height: 200px;
+    /* max-height: 200px; */
     display: flex;
     flex-direction: column;
     
+}
+
+/* Navigation Menu */
+
+.nav-menu ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu li {
+    display: block;
+}
+
+.nav-menu a {
+    padding: 6px 12px;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-menu a:hover {
+    background-color: #999;
 }
 
 main {
@@ -51,7 +80,7 @@ button:hover {
 
 .btn-primary {
     background-color: #5AAA95;
-    font: black;
+    color: black;
 }
 
 /* .column {
@@ -76,17 +105,27 @@ div {
 
 .profile_photo {
     max-width: 200px;
-    padding: 5px;
 }
 
 h1 {
     text-align: center;
+    margin: 10px;
 }
 
 .about {
-    margin: auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
+
+/*.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 1rem;
+  } */
 
 
 /******************************
@@ -129,7 +168,7 @@ Media Queries
 
 @media all and (min-width: 800px) {
     main {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -137,8 +176,35 @@ Media Queries
         flex-direction: row;
         justify-content: flex-end;
     }
+    /* Navigation Menu */
+
+    .nav-menu ul{
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav-menu li {
+        display: block;
+    }
+    
+    .nav-menu a {
+        padding: 6px 12px;
+        width: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .nav-menu a:hover {
+        background-color: #999;
+    }
+
     article {
-        max-width: 50%;
+        max-width: 30%;
     }
     .navitem{
         margin-right: 2rem;
@@ -152,7 +218,7 @@ Media Queries
         align-items: center;
         justify-content: center;
     }
-
+  
 }
 
 /* @media all and (min-width: 1201px) {
@@ -210,9 +276,3 @@ fieldset {
 
 
 
-/*.container {
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px;
-    grid-gap: 1rem;
-  } */

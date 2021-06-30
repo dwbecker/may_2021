@@ -10,21 +10,30 @@
         <script defer src="js/script.js"></script>
         <title>David Becker - Resume</title>
     </head>
+        
         <body>
+
             <header class="header">
-                <nav>
-                    <a class="logo" href=""></a>
-                    <button id="action-btn" class="btn-primary"><a class="navitem" href="index.html">Home</a></button>
-                    <button id="action-btn" class="btn-primary"><a class="navitem" href="https://github.com/dwbecker">Portfolio</a></button>
-                    <button id="action-btn" class="btn-primary"><a class="navitem" href="contact.html">Contact</a></button>
+                <div>
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                      </svg>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                    <li><a class="navitem" href="index.html">Home</a></li>
+                    <li><a class="navitem" href="https://github.com/dwbecker">Portfolio</a></li>
+                    <li><a class="navitem" href="contact.html">Contact</a></li>
+                    </ul>
                 </nav>
             </header>
 
             <main>
 
-                <div class="about">
-                    <h1>David Becker</h1>
-
+                <article class="about">
+                    
                     <img class="profile_photo" src="img/david_becker.jpeg" alt="Image of David Becker">
 
                     <h2>About me</h2>
@@ -32,53 +41,21 @@
                     <p>I am an instructional designer, front-end web developer, and an EdD student in Instructional Systems Technology. I am also a member of the May 2021 cohort of Code Louisville.</p>
                     
                     <p></p>
-                </div>
+                </article>
 
-                <div class="projects">
+                <section class="projects">
                     <h1>Coding Projects</h1>
                     
                     <div class="container">
-                        <div class="item item1">
-                            
-                        </div>
+                        <div class="item item1"></div>  
                         <div class="item item2"></div>
                         <div class="item item3"></div>
                         <div class="item item4"></div>
                         <div class="item item5"></div>
                         <div class="item item5"></div>
                     </div>
-                </div>
-                <!-- <div class="column" id="column-1">
-                    <button id="action-btn" class="btn-primary">Cool Button</button>
-                    <h1>Column 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros velit, venenatis quis lacinia eleifend, lacinia sit amet nulla. Sed at tempus leo, eu dapibus sem. Nullam consectetur quis arcu ut lobortis. Ut sit amet nisi turpis. Nullam magna libero, elementum mattis diam ac, laoreet convallis sapien. Sed convallis ipsum lorem, quis posuere velit vulputate quis. Cras tortor neque, mollis ut varius sed, mollis eu lectus. Vivamus vel sodales lacus, id feugiat tellus. Vestibulum dui urna, blandit nec commodo id, congue in lorem. Proin laoreet finibus efficitur. Fusce pulvinar ipsum non dolor pulvinar, eget aliquam felis varius.
 
-                        Sed id vestibulum mauris. Duis velit felis, auctor vel fringilla vestibulum, porttitor ut nulla. Etiam lacinia turpis nisl, eu vulputate turpis facilisis nec. Donec sed consectetur neque, vel dictum lorem. Donec turpis ante, finibus eu quam id, molestie feugiat ex. Morbi a tortor et nibh sagittis suscipit non id elit. Sed venenatis in purus quis ultricies. Phasellus egestas a quam ut venenatis. Curabitur at sem at eros blandit fermentum at eget turpis. Nam porta mauris quam, non venenatis urna congue ac. Nunc malesuada molestie varius. Praesent pulvinar nunc turpis, vitae scelerisque nibh faucibus et. Vivamus ultricies nisl id est efficitur, eu rutrum nunc tempor. Integer mattis pharetra semper. Duis hendrerit tortor lacus, finibus commodo quam finibus ut. Aliquam et mattis lacus.
-                        
-                    </p>
-                </div>
-                <div class="column" id="column-2">
-                    <h1>Column 2</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros velit, venenatis quis lacinia eleifend, lacinia sit amet nulla. Sed at tempus leo, eu dapibus sem. Nullam consectetur quis arcu ut lobortis. Ut sit amet nisi turpis. Nullam magna libero, elementum mattis diam ac, laoreet convallis sapien. Sed convallis ipsum lorem, quis posuere velit vulputate quis. Cras tortor neque, mollis ut varius sed, mollis eu lectus. Vivamus vel sodales lacus, id feugiat tellus. Vestibulum dui urna, blandit nec commodo id, congue in lorem. Proin laoreet finibus efficitur. Fusce pulvinar ipsum non dolor pulvinar, eget aliquam felis varius.
-
-                        Sed id vestibulum mauris. Duis velit felis, auctor vel fringilla vestibulum, porttitor ut nulla. Etiam lacinia turpis nisl, eu vulputate turpis facilisis nec. Donec sed consectetur neque, vel dictum lorem. Donec turpis ante, finibus eu quam id, molestie feugiat ex. Morbi a tortor et nibh sagittis suscipit non id elit. Sed venenatis in purus quis ultricies. Phasellus egestas a quam ut venenatis. Curabitur at sem at eros blandit fermentum at eget turpis. Nam porta mauris quam, non venenatis urna congue ac. Nunc malesuada molestie varius. Praesent pulvinar nunc turpis, vitae scelerisque nibh faucibus et. Vivamus ultricies nisl id est efficitur, eu rutrum nunc tempor. Integer mattis pharetra semper. Duis hendrerit tortor lacus, finibus commodo quam finibus ut. Aliquam et mattis lacus.
-                        
-                    </p>
-                </div>
-                <div class="column" id="column-3">
-                    <h1>Column 3</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros velit, venenatis quis lacinia eleifend, lacinia sit amet nulla. Sed at tempus leo, eu dapibus sem. Nullam consectetur quis arcu ut lobortis. Ut sit amet nisi turpis. Nullam magna libero, elementum mattis diam ac, laoreet convallis sapien. Sed convallis ipsum lorem, quis posuere velit vulputate quis. Cras tortor neque, mollis ut varius sed, mollis eu lectus. Vivamus vel sodales lacus, id feugiat tellus. Vestibulum dui urna, blandit nec commodo id, congue in lorem. Proin laoreet finibus efficitur. Fusce pulvinar ipsum non dolor pulvinar, eget aliquam felis varius.
-
-                        Sed id vestibulum mauris. Duis velit felis, auctor vel fringilla vestibulum, porttitor ut nulla. Etiam lacinia turpis nisl, eu vulputate turpis facilisis nec. Donec sed consectetur neque, vel dictum lorem. Donec turpis ante, finibus eu quam id, molestie feugiat ex. Morbi a tortor et nibh sagittis suscipit non id elit. Sed venenatis in purus quis ultricies. Phasellus egestas a quam ut venenatis. Curabitur at sem at eros blandit fermentum at eget turpis. Nam porta mauris quam, non venenatis urna congue ac. Nunc malesuada molestie varius. Praesent pulvinar nunc turpis, vitae scelerisque nibh faucibus et. Vivamus ultricies nisl id est efficitur, eu rutrum nunc tempor. Integer mattis pharetra semper. Duis hendrerit tortor lacus, finibus commodo quam finibus ut. Aliquam et mattis lacus.
-                        
-                    </p>
-                </div> -->
-              
-                <!--This creates a grid on the page which can be manipulated via CSS.-->
-               
-
-                
-
+                </section>
             </main>
             <footer>
                 <p>&copy; Copyright 2021</p>
