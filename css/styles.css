@@ -36,7 +36,7 @@ nav {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -55,6 +55,11 @@ nav {
 
 .nav-menu a:hover {
     background-color: #999;
+}
+
+#menu-icon {
+    display: block;
+
 }
 
 main {
@@ -120,12 +125,12 @@ h1 {
     
 }
 
-/*.container {
+.container {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;
     grid-gap: 1rem;
-  } */
+  }
 
 
 /******************************
@@ -146,25 +151,6 @@ form {
 /******************************
 Media Queries
 *******************************/
- 
-@media all and (max-width: 799px) {
-    main {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .profile_photo {
-        align-items: center;
-    }
-    .column {
-        width: 75%;
-        height: 100%;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 @media all and (min-width: 800px) {
     main {
@@ -176,6 +162,7 @@ Media Queries
         flex-direction: row;
         justify-content: flex-end;
     }
+    
     /* Navigation Menu */
 
     .nav-menu ul{
@@ -203,6 +190,10 @@ Media Queries
         background-color: #999;
     }
 
+    #menu-icon {
+        display: none;
+    }
+
     article {
         max-width: 30%;
     }
@@ -220,59 +211,6 @@ Media Queries
     }
   
 }
-
-/* @media all and (min-width: 1201px) {
-    main {
-        flex-direction: row;
-        justify-content: center;
-    }
-    nav {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .navitem{
-        margin-right: 2rem;
-    }
-    .column {
-        width: 75%;
-        height: 100%;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        align-items: center;
-        justify-content: center;
-    }
-} */
-
-
-/******************************
-Flexbox Layout
-*******************************/
-
-/*.header, 
-nav,
-fieldset {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-@media all and (min-width: 640px) {
-    .header, 
-    nav {
-        flex-direction: row;
-    }
-    form {
-        max-width: 480px;
-      }
-    
-}
-
-@media all and (min-width: 1030px) {
-    nav {
-        justify-content: space-around;
-    }
-} */
 
 
 
