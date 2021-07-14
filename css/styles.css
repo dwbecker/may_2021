@@ -22,82 +22,58 @@ header {
     flex-direction: column;
 }
 
-nav {
+/* nav {
     height: 25%;
-    /* max-height: 200px; */
     display: flex;
     flex-direction: column;
-    
-}
+} */
 
 /* Navigation Menu */
 
-.nav-menu ul{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    display: none;
-    flex-direction: column;
-}
+    #nav-menu ul{
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
 
-.nav-menu li {
-    display: block;
-}
+    #nav-menu li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-.nav-menu a {
-    padding: 6px 12px;
-    width: 100%;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
+    #nav-menu li a {
+        padding: 6px 12px;
+        width: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
 
-.nav-menu a:hover {
-    background-color: #999;
-}
+    #nav-menu li a:hover {
+        background-color: #999;
+    }
 
-#menu-icon {
-    display: block;
+    #menu-icon {
+        display: block;
+    }
 
-}
+/* end navigation menu */
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 10vh;
-    margin-right: 10vh; */
 }
-
-button {
-    padding: 1rem;
-    background-color: #999;
-    border: none;
-    border-radius: 0.3rem;
-    margin: 1rem;
-}
-
-button:hover {
-    background-color: white;
-    color: black;
-}
-
-.btn-primary {
-    background-color: #5AAA95;
-    color: black;
-}
-
-/* .column {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;   
-    margin-bottom: 3rem;
-    padding: 0, 1em;
-} */
 
 div {
     display: flex;
@@ -165,7 +141,7 @@ Media Queries
     
     /* Navigation Menu */
 
-    .nav-menu ul{
+    #nav-menu ul{
         list-style: none;
         margin-left: 0;
         padding-left: 0;
@@ -173,11 +149,11 @@ Media Queries
         flex-direction: row;
     }
     
-    .nav-menu li {
+    #nav-menu li {
         display: block;
     }
     
-    .nav-menu a {
+    #nav-menu a {
         padding: 6px 12px;
         width: 100%;
         display: block;
@@ -186,7 +162,7 @@ Media Queries
         text-align: center;
     }
     
-    .nav-menu a:hover {
+    #nav-menu a:hover {
         background-color: #999;
     }
 
