@@ -10,7 +10,6 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* background-image: linear-gradient(to top, green, #f8ffd7 26%) ; */
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgrey;
 }
@@ -22,52 +21,41 @@ header {
     flex-direction: column;
 }
 
-/* nav {
-    height: 25%;
-    display: flex;
+/* navigation menu */
+#nav-menu {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: none;
     flex-direction: column;
-} */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
-/* Navigation Menu */
+#nav-menu li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
-    #nav-menu ul{
-        list-style: none;
-        margin-left: 0;
-        padding-left: 0;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
+#nav-menu li a {
+    padding: 6px 12px;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #999;
+}   
 
-    #nav-menu li {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
+#nav-menu li a:hover {
+    background-color: #999;
+}
 
-    #nav-menu li a {
-        padding: 6px 12px;
-        width: 100%;
-        display: block;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    #nav-menu li a:hover {
-        background-color: #999;
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-/* end navigation menu */
 
 main {
     display: flex;
@@ -75,14 +63,14 @@ main {
     align-items: center;
 }
 
-div {
+/* div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 75%;
-}
+} */
 
 .profile_photo {
     max-width: 200px;
