@@ -1,17 +1,27 @@
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
-const errorElement = document.getElementById('error');
-
-form.addEventListener('submit', (e) => {
-    let messages []
-    if (name.value === '') || name.value == null) {
-        messages.push('Name is required')
+function validate() {
+      
+    if( document.myForm.name.value == "" ) {
+       alert( "Please provide your name!" );
+       document.myForm.name.focus() ;
+       return false;
     }
-
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(', ')
+    if( document.myForm.email.value == "" ) {
+       alert( "Please provide your email address!" );
+       document.myForm.email.focus() ;
+       return false;
     }
+    return( true );
+ }
 
-}
+ function validateEmail() {
+    var emailID = document.myForm.email.value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+    
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+       alert("Please enter your email address.")
+       document.myForm.email.focus() ;
+       return false;
+    }
+    return( true );
+ }
