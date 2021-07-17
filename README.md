@@ -9,3 +9,4 @@ The first CSS cirterion this website meets is, "Use Flexbox or CSS Grid to organ
 
 The second CSS criterion this website meets is, "A navigation menu that expands and collapses properly at desktop and mobile sizes." While in mobile view, the navigation menu takes the form of a click-to-activate "hamburger" menu. While the viewport is 800px or larger, the navigation menu is a FlexBox navigation menu locted in the upper right corner of the page.
 
+The JavaScript criterion this website meets is, "Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow." 
