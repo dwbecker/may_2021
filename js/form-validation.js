@@ -1,3 +1,8 @@
+const user_name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message')
+
+
 function validate() {
       
     if( document.myForm.name.value == "" ) {
@@ -11,7 +16,7 @@ function validate() {
        return false;
     }
     return( true );
- }
+ };
 
  function validateEmail() {
     var emailID = document.myForm.email.value;
@@ -24,9 +29,9 @@ function validate() {
        return false;
     }
     return( true );
- }
+ };
 
- function message () {
+ function displayMessageOnSubmit () {
     
 
- }
+ };

@@ -1,6 +1,7 @@
 /******************************
 Main Styles
 *******************************/
+
 * {
    box-sizing: border-box;
 }
@@ -21,7 +22,8 @@ header {
     flex-direction: column;
 }
 
-/* navigation menu */
+/* Navigation Menu */
+
 #nav-menu {
     list-style: none;
     margin-left: 0;
@@ -56,6 +58,7 @@ header {
     background-color: #999;
 }
 
+/* End Navigation Menu */
 
 main {
     display: flex;
@@ -117,6 +120,11 @@ Media Queries
 *******************************/
 
 @media all and (min-width: 800px) {
+    
+    * {
+        font-size: 1.05rem;
+    }
+
     main {
         flex-direction: row;
         justify-content: center;
@@ -167,19 +175,11 @@ Media Queries
     article {
         max-width: 30%;
     }
+
     .navitem{
         margin-right: 2rem;
         align-items: center;
     }
-    .column {
-        width: 75%;
-        height: 100%;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        align-items: center;
-        justify-content: center;
-    }
-  
 }
 
 
