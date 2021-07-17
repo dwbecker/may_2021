@@ -1,12 +1,12 @@
-//find element on the page
+// Find elements on the page
 const menuIcon = document.getElementById("menu-icon");
 const navMenu = document.getElementById("nav-menu");
 
-//perform action on click event
+// Perform action on click event
 
 menuIcon.addEventListener("click", showNavMenuOnClick);
 
-// This is the hamburger menu
+// Function displays and hides the navigation menu
 function showNavMenuOnClick() {
     if(!navMenu.style.display) {
         navMenu.style.display = 'flex'

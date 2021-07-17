@@ -25,3 +25,8 @@ function validate() {
     }
     return( true );
  }
+
+ function message () {
+    
+
+ }
