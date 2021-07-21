@@ -1,5 +1,5 @@
 # may_2021
-Project for Code Louisville Front-End May 2021 cohort
+Project for Code Louisville Front-End May 2021 Cohort
 
 This website is a simple resume website designed specifically to meet the requirements of the COde Louisville Front-End course.
 
@@ -9,4 +9,4 @@ The first CSS cirterion this website meets is, "Use Flexbox or CSS Grid to organ
 
 The second CSS criterion this website meets is, "A navigation menu that expands and collapses properly at desktop and mobile sizes." While in mobile view, the navigation menu takes the form of a click-to-activate "hamburger" menu. While the viewport is 800px or larger, the navigation menu is a FlexBox navigation menu locted in the upper right corner of the page.
 
-The JavaScript criterion this website meets is, "Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow." 
+The JavaScript criterion this website meets is, "Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code." 

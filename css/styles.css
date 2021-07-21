@@ -4,6 +4,7 @@ Main Styles
 
 * {
    box-sizing: border-box;
+   font-size: 1.05rem;
 }
 
 body {
@@ -93,10 +94,18 @@ h1 {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    /* grid-template-columns: 50px 50px 50px;
     grid-template-rows: 50px 50px;
-    grid-gap: 1rem;
+    grid-gap: 1rem; */
+  }
+
+  footer {
+      margin: 20px;
   }
 
 
@@ -119,7 +128,12 @@ form {
 Media Queries
 *******************************/
 
-@media all and (min-width: 800px) {
+
+@media all and (max-width: 428px) {
+
+}
+
+@media all and (min-width: 768px) {
     
     * {
         font-size: 1.05rem;
